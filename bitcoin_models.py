@@ -21,7 +21,7 @@ This prediction tool aims to forecast the future price of Bitcoin(ON QUARTERLY B
 """)
 
 # Load data
-bitcoin_database_open_date = pd.read_csv("/Users/divyamishra/Downloads/bitcoin_open_price_per_day.csv")
+bitcoin_database_open_date = pd.read_csv("bitcoin_open_price_per_day.csv")
 
 # Convert 'open' column to numeric data type
 bitcoin_database_open_date['open'] = pd.to_numeric(bitcoin_database_open_date['open'], errors='coerce')
